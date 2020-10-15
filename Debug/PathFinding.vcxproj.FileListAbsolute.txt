@@ -1,2 +1,0 @@
-C:\Users\frayb\source\repos\PathFinding\Debug\PathFinding.exe
-C:\Users\frayb\source\repos\PathFinding\Debug\PathFinding.pdb

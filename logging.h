@@ -1,4 +1,5 @@
 #pragma once
-#include "includes.h"
+#include <iostream>
+#include <string>
 
 void Log(std::string Value);

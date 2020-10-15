@@ -1,7 +1,14 @@
 // PathFinding.cpp : This file contains the 'main' function. Program execution begins and ends there.
 //
+#include <iostream>
+#include <string>
+#include <vector>
+#include <chrono>
+#include <thread>
+#include <math.h>
 
-#include "includes.h"
+#include "utils.h"
+#include "logging.h"
 
 const int MAX = 20;
 const int MAX_DISPLAYABLE = 9;
@@ -12,8 +19,6 @@ const int  intGoalPosition[2] = { 2, 3 };
 
 // Set starting position
 int(*positionPointer) = new int[] { MAX - 1, MAX - 1};
-
-
 
 enum direction {
     down, up,
@@ -153,26 +158,6 @@ int* get_Right_Pos() {
     return val;
 }
 
-float distance_calculator(float x1, float x2, float y1, float y2) {
-    return sqrt((x1 - y1) * (x1 - y1) + (x2 - y2) * (x2 - y2));
-}
-float distance_calculator(int x1, int x2, int y1, int y2) {
-    return sqrt((x1 - y1) * (x1 - y1) + (x2 - y2) * (x2 - y2));
-}
-
-float distanceBetween2Points(int point1[2], int point2[2]) {
-    return distance_calculator(point1[0], point1[1], point2[0], point2[1]);
-}
-float distanceBetween2Points(int point1[2], const int point2[2]) {
-    return distance_calculator(point1[0], point1[1], point2[0], point2[1]);
-}
-
-float getDistanceToGoal(int pos[2]) {
-    //std::cout << std::endl << "Pos 1: " << pos[0] << ", " << pos[1];
-    //std::cout << std::endl << "Pos 2: " << intGoalPosition[0] << ", " << intGoalPosition[1];
-    return distanceBetween2Points(pos, intGoalPosition);
-}
-
 std::tuple<direction, float> testDir(float curBestDistance, direction curBESTDIRECTION, direction TestingDirection) {
     int h = 0;
     int v = 1;
@@ -200,7 +185,7 @@ std::tuple<direction, float> testDir(float curBestDistance, direction curBESTDIR
     tmpPos[h] = tmp435345[h];
     tmpPos[v] = tmp435345[v];
 
-    float goalDist = getDistanceToGoal(tmpPos);
+    float goalDist = distanceBetween2Points(tmpPos, intGoalPosition);
     if (goalDist < curBestDistance) {
         curBestDistance = goalDist;
         curBESTDIRECTION = TestingDirection;

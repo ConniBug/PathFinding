@@ -1,0 +1,7 @@
+﻿  PathFinding.cpp
+C:\Users\frayb\source\repos\PathFinding\PathFinding.cpp(35,5): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\frayb\source\repos\PathFinding\PathFinding.cpp(122): warning C4172: returning address of local variable or temporary: saved
+C:\Users\frayb\source\repos\PathFinding\PathFinding.cpp(134): warning C4172: returning address of local variable or temporary: saved
+C:\Users\frayb\source\repos\PathFinding\PathFinding.cpp(146): warning C4172: returning address of local variable or temporary: saved
+C:\Users\frayb\source\repos\PathFinding\PathFinding.cpp(158): warning C4172: returning address of local variable or temporary: saved
+  PathFinding.vcxproj -> C:\Users\frayb\source\repos\PathFinding\x64\Debug\PathFinding.exe

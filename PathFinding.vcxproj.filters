@@ -13,21 +13,30 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
+    <Filter Include="Source Files\Code">
+      <UniqueIdentifier>{eb8f9032-f720-4260-8c13-4a369129f9f5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Headers">
+      <UniqueIdentifier>{ae2283a1-7b3f-44eb-a577-72038f9b0ec6}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="PathFinding.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
     <ClCompile Include="logging.cpp">
-      <Filter>Source Files</Filter>
+      <Filter>Source Files\Code</Filter>
+    </ClCompile>
+    <ClCompile Include="PathFinding.cpp">
+      <Filter>Source Files\Code</Filter>
+    </ClCompile>
+    <ClCompile Include="utils.cpp">
+      <Filter>Source Files\Code</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="logging.h">
-      <Filter>Source Files</Filter>
+      <Filter>Source Files\Headers</Filter>
     </ClInclude>
-    <ClInclude Include="includes.h">
-      <Filter>Source Files</Filter>
+    <ClInclude Include="utils.h">
+      <Filter>Source Files\Headers</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

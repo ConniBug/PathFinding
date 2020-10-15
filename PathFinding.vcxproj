@@ -141,10 +141,11 @@
   <ItemGroup>
     <ClCompile Include="logging.cpp" />
     <ClCompile Include="PathFinding.cpp" />
+    <ClCompile Include="utils.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="includes.h" />
     <ClInclude Include="logging.h" />
+    <ClInclude Include="utils.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

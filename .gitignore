@@ -1,0 +1,12 @@
+
+*.db-wal
+.vs/PathFinding/v16/.suo
+*.opendb
+.vs/PathFinding/v16/.suo
+*.recipe
+*.pdb
+*.tlog
+*.lastbuildstate
+*.ipch
+.vs/PathFinding/v16/ipch/AutoPCH/ef75487524b02b73/PATHFINDING.ipch
+*.db
